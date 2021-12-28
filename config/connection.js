@@ -1,3 +1,4 @@
+// Instead of using the command line mysql -u root -p it will login in mysql
 const Sequelize = require("sequelize");
 require("dotenv").config();
 
