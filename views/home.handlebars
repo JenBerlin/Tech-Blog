@@ -1,3 +1,17 @@
 <H1>
   Hallo Welt!
 </H1>
+
+<article class="message">
+  {{#each postMap}}
+  <div class="message-header">
+    <p>{{title}}</p>
+    <button class="delete" aria-label="delete"></button>
+  </div>
+  <div class="message-body">
+<p> {{content}}</p>
+  by {{user.username}}
+  </div>
+  {{/each}}
+</article>
+</div>

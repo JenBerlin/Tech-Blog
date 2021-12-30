@@ -19,13 +19,6 @@ Comment.init(
         msg: "Please provide field within 20 to 200 characters.",
       },
     },
-    post_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "post",
-        key: "id",
-      },
-    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -41,3 +34,5 @@ Comment.init(
     modelName: "comment",
   }
 );
+
+module.exports = Comment;
