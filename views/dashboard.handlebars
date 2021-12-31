@@ -1,3 +1,11 @@
-<H1>
-  Hallo Dirk!
-</H1>
+<article class="message">
+  {{#each postMap}}
+    <div class="message-header">
+      <p>{{title}}</p>
+      <button class="delete" aria-label="delete">Delete</button>
+    </div>
+    <div class="message-body">
+      <p> {{content}}</p>
+    </div>
+  {{/each}}
+</article>
