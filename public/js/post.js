@@ -5,8 +5,11 @@ const createFormHandler = async (event) => {
   const title = document.getElementById("title").value;
   const post = document.getElementById("post").value;
 
+  //   Values werden an den Server/API geschickt.
+  //   Mit Fetch wird der Pfad bestimmt, der über api_routes aufgerufen wird; in diesem Fall /post.
   const response = await fetch("/api/post", {
     method: "POST",
+    // Pack die Values in den Body rein.
     body: JSON.stringify({ title, post }),
     headers: { "Content-Type": "application/json" },
   });
