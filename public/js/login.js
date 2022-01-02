@@ -13,7 +13,13 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
+      // Wenn alles okay, dann geht er direkt zum Dashboard
       document.location.replace("/dashboard");
+      const dashboardNode = document.querySelector("#dashboard");
+      console.log(dashboardNode);
+      dashboardNode.classList.remove("disabled");
+      const logoutNode = document.querySelector("#logout");
+      logoutNode.classList.remove("disabled");
     } else {
       alert("Failed to log in.");
     }

@@ -2,6 +2,7 @@ const router = require("express").Router();
 // De-Constructed object/variable
 const { Post, User, Comment } = require("../models");
 
+// Erster Parameter ist der Pfad und der zweite Parameter die Funktion, die ausgeführt werden soll.; erster Pararmeter /, in diesem Fall Home;
 router.get("/", async (req, res) => {
   try {
     const posts = await Post.findAll({
@@ -27,6 +28,13 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
+router.get("/logout", (req, res) => {
+  // If the user is already logged in, redirect to the homepage
+  req.session.loggedIn = false;
+  delete req.session.userId;
+  res.redirect("/");
+});
+
 router.get("/dashboard", async (req, res) => {
   try {
     const posts = await Post.findAll({
@@ -40,6 +48,10 @@ router.get("/dashboard", async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
+});
+
+router.get("/newpost", (req, res) => {
+  res.render("newpost");
 });
 
 module.exports = router;
