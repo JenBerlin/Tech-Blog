@@ -1,30 +1,47 @@
-<head>
-  <meta charset="UTF-8">
-  <title>Tech-Blog</title>
-  {{!-- <link rel="stylesheet" href="/css/jass.css"> --}}
-  {{!-- <link rel="stylesheet" href="/css/style.css"> --}}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-</head>
-
-<body>
-  <div>
-    <header>
-      <h1>
-        The Tech Blog
-      </h1>
-    </header>
-    <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/dashboard">Dashboard</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/logout">Logout</a></li>
-          </ul>
-    </nav>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tech-Blog</title>
+    {{! <link rel="stylesheet" href="/css/jass.css"> }}
+    {{! <link rel="stylesheet" href="/css/style.css"> }}
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1 class="display-4 p-3 mb-1 bg-dark text-white">
+          The Tech Blog
+        </h1>
+      </header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <main>
-        {{{ body }}}
+        {{{body}}}
       </main>
-  </div>
+    </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+  ></script>
 </html>

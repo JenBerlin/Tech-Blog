@@ -1,17 +1,16 @@
-<H1>
-  Hallo Welt!
-</H1>
-
-<article class="message">
+<div>
   {{#each postMap}}
-  <div class="message-header">
-    <p>{{title}}</p>
-    <button class="delete" aria-label="delete">Delete</button>
-  </div>
-  <div class="message-body">
-<p> {{content}}</p>
-  by {{user.username}}
-  </div>
+    <div class="card border border-dark p-2 m-2">
+      <div class="card-header">
+        {{title}}
+        by
+        {{user.username}}
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>{{content}}</p>
+        </blockquote>
+      </div>
+    </div>
   {{/each}}
-</article>
 </div>

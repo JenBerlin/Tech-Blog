@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
       include: [User],
     });
     const postMap = posts.map((post) => post.get({ plain: true }));
-    // To be finished
+    // res.render will require the name of the file, which needs to get rendered
     res.render("home", { postMap });
     // res.json(postMap);
   } catch (err) {
