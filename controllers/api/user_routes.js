@@ -3,7 +3,6 @@ const { User } = require("../../models");
 
 // CREATE new user
 router.post("/singup", async (req, res) => {
-  console.log(req.body, "routehit");
   try {
     const userData = await User.create({
       username: req.body.username,
@@ -14,7 +13,8 @@ router.post("/singup", async (req, res) => {
     req.session.save(() => {
       req.session.userId = userData.id;
       req.session.username = userData.username;
-      req.req.session.loggedIn = true;
+      // Here we had the following mistake: req.req.session ...
+      req.session.loggedIn = true;
 
       res.status(200).json(userData);
     });

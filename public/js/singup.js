@@ -23,5 +23,6 @@ const signupFormHandler = async (event) => {
 };
 
 document
-  .querySelector("#signup-form")
+// There was a typo in the id.
+  .querySelector("#singup-form")
   .addEventListener("submit", signupFormHandler);
