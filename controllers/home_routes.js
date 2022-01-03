@@ -17,6 +17,18 @@ router.get("/", async (req, res) => {
   }
 });
 
+// Singup route; rending the singup page after clicking the button.
+// /singup is an address which we have stated in login.handlebars.
+router.get("/singup", (req, res) => {
+  // If the user is already logged in, redirect to the homepage
+  if (req.session.loggedIn) {
+    res.redirect("/");
+    return;
+  }
+  // Otherwise, render the 'singup' template/handlebar
+  res.render("singup");
+});
+
 // Login route
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirect to the homepage
