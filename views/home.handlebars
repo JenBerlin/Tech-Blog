@@ -1,3 +1,9 @@
+{{#if loggedIn}}
+{{> private-navbar}}
+{{else}}
+{{> public-navbar}}
+{{/if}}
+
 <div>
   {{#each postMap}}
     <div class="card border border-dark p-2 m-2">

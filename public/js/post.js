@@ -19,6 +19,25 @@ const createFormHandler = async (event) => {
   //   evtl. Error Fall noch einbauen.
 };
 
+const onClickDelete = async (event) => {
+  event.preventDefault;
+  console.log("Helloooooooo");
+  const id = event.currentTarget.id;
+  const options = {
+    method: "DELETE",
+    redirect: "follow",
+  };
+  const response = await fetch(`/api/post/${id}`, options);
+
+  if (response.status !== 200) {
+    console.info("Failed to delete post.");
+  } else {
+    window.location.replace("/dashboard");
+  }
+};
+
+$(`[name="delete-post"]`).click(onClickDelete);
+
 document
   .querySelector(".create-form")
   // Konfiguration des Buttons; der Button soll darauf hören, wenn ein submit kommt. Erst dann wird die Funktion "createFormHandler" ausgeführt.

@@ -1,8 +1,11 @@
+{{> private-navbar}}
+
+
 <article class="message">
   {{#each postMap}}
     <div class="message-header">
       <p>{{title}}</p>
-      <button class="delete" aria-label="delete">Delete</button>
+      <button type="submit" id={{id}} name="delete-post" class="delete" aria-label="delete">Delete</button>
     </div>
     <div class="message-body">
       <p> {{content}}</p>

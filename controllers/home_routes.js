@@ -4,13 +4,15 @@ const { Post, User, Comment } = require("../models");
 
 // Erster Parameter ist der Pfad und der zweite Parameter die Funktion, die ausgeführt werden soll.; erster Pararmeter /, in diesem Fall Home;
 router.get("/", async (req, res) => {
+  const { loggedIn } = req.session;
+
   try {
     const posts = await Post.findAll({
       include: [User],
     });
     const postMap = posts.map((post) => post.get({ plain: true }));
     // res.render will require the name of the file, which needs to get rendered
-    res.render("home", { postMap });
+    res.render("home", { postMap, loggedIn });
     // res.json(postMap);
   } catch (err) {
     res.status(500).json(err);
