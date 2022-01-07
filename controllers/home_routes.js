@@ -69,4 +69,18 @@ router.get("/newpost", (req, res) => {
   res.render("newpost");
 });
 
+router.get("/comment-post/:id", async (req, res) => {
+  try {
+    const post = await Post.findByPk(
+      // Warum "id"? Da oben /:id steht
+      req.params.id
+    );
+    console.log(post);
+    // In {} übergeben wir die variable
+    res.render("comment-post", { post: post.get({ plain: true }) });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;

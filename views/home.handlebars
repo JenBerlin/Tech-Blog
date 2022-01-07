@@ -10,7 +10,11 @@
   {{#each postMap}}
     <div class="card border border-dark p-2 m-2">
       <div class="card-header">
-        {{title}}
+        {{#if ../loggedIn}}
+          <a href="/comment-post/{{id}}" id="comment-post">{{title}}</a>
+        {{else}}
+          {{title}}
+        {{/if}}
         by
         {{user.username}} 
         on

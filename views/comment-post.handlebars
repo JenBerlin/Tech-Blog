@@ -1,0 +1,18 @@
+{{> private-navbar}}
+
+<article class="message">
+    <div class="message-header">
+      <p>{{post.title}} 
+        on
+        {{formatDate post.createdAt}}</p>
+    </div>
+    <div class="message-body">
+      <p> {{post.content}}</p>
+    </div>
+    <div>
+        <input type="text" id="input-comment" name="comment">
+    </div>
+    <div>
+      <button type="submit" id={{id}} name="submit" class="submit" aria-label="submit">Submit</button>
+    </div>
+</article>
