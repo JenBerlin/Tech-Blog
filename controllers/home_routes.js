@@ -76,6 +76,7 @@ router.get("/comment-post/:id", async (req, res) => {
       req.params.id
     );
     console.log(post);
+    req.session.postId = req.params.id;
     // In {} übergeben wir die variable
     res.render("comment-post", { post: post.get({ plain: true }) });
   } catch (err) {

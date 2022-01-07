@@ -1,5 +1,6 @@
 {{> private-navbar}}
 
+<form class="create-form">
 <article class="message">
     <div class="message-header">
       <p>{{post.title}} 
@@ -13,6 +14,8 @@
         <input type="text" id="input-comment" name="comment">
     </div>
     <div>
-      <button type="submit" id={{id}} name="submit" class="submit" aria-label="submit">Submit</button>
+      <button type="submit" name="submit" class="submit" aria-label="submit">Submit</button>
     </div>
 </article>
+</form>
+<script src="../js/comment.js"></script>
