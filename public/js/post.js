@@ -21,7 +21,6 @@ const createFormHandler = async (event) => {
 
 const onClickDelete = async (event) => {
   event.preventDefault;
-  console.log("Helloooooooo");
   const id = event.currentTarget.id;
   const options = {
     method: "DELETE",
