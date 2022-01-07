@@ -12,6 +12,7 @@ router.get("/", async (req, res) => {
     });
     const postMap = posts.map((post) => post.get({ plain: true }));
     // res.render will require the name of the file, which needs to get rendered
+    // { postMap, loggedIn } sind von mir frei bestimmte variablen; diese werden dann von handelbars aufgegrifften, wenn angegeben z. B. in handelbar files;
     res.render("home", { postMap, loggedIn });
     // res.json(postMap);
   } catch (err) {

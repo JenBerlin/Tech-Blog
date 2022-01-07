@@ -3,11 +3,16 @@
 <article class="message">
   {{#each postMap}}
     <div class="message-header">
-      <p>{{title}}</p>
-      <button type="submit" id={{id}} name="delete-post" class="delete" aria-label="delete">Delete</button>
+      <p>{{title}} 
+        on
+        {{formatDate createdAt}}</p>
     </div>
     <div class="message-body">
       <p> {{content}}</p>
+    </div>
+    <div>
+      <button type="submit" id={{id}} name="delete-post" class="delete" aria-label="delete">Delete</button>
+      <button type="submit" id={{id}} name="update-post" class="update" aria-label="update">Update</button>
     </div>
   {{/each}}
   <div>
@@ -18,3 +23,4 @@
       >+ New Post</button></a>
   </div>
 </article>
+<script src="./js/delete-post.js"></script>

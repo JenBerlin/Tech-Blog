@@ -5,13 +5,16 @@
 {{/if}}
 
 <div>
+  {{!-- #each = ist wie ein tag --}}
+  {{!-- postMap wurde in home_routes bestimmt --}}
   {{#each postMap}}
     <div class="card border border-dark p-2 m-2">
       <div class="card-header">
         {{title}}
         by
         {{user.username}} 
-        {{!-- {{timestamp}} --}}
+        on
+        {{formatDate createdAt}}
       </div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">
