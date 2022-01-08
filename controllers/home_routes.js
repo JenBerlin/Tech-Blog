@@ -84,4 +84,9 @@ router.get("/comment-post/:id", async (req, res) => {
   }
 });
 
+// neu
+// router.get("/show ... "
+// mit allen comments und den post selber auch noch
+// res.renter ...
+
 module.exports = router;

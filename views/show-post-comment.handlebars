@@ -1,0 +1,22 @@
+{{> private-navbar}}
+
+<form class="create-form">
+<article class="message">
+    <div class="message-header">
+      <p>{{post.title}} 
+        on
+        {{formatDate post.createdAt}}</p>
+    </div>
+    <div class="message-body">
+      <p> {{post.content}}</p>
+    </div>
+    <div>
+        <input type="text" id="input-comment" name="comment">
+    </div>
+    <div>
+      <button type="submit" name="submit" class="submit" aria-label="submit">Submit</button>
+    </div>
+</article>
+</form>
+
+{{!-- ohne Button, ohne input, p --}}
