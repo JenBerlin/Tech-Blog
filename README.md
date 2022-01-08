@@ -11,11 +11,9 @@ Table of content
 
 # Description
 
-This application allows - by using a back-end working with Express.js API and Sequelize to interacht with the MySQL database - an user to have a back end for a e-commerce website. For now - for demonstration purposes, see walkthrough video - the application code is functional on the developers machine (MySQL login/.env).
+This Blog application allows the user to singup and login to their account, publish and delete own blog posts and comment on other users blog posts.
 
-The application itself containes a database with different tables (models) for different item categories, products and tags. The tables are partly linked to each other and a basic data is given by the seeds files.
-
-The User can check the database, can add, delete and update data through the commandline or rather by using a API Design Platform like insomnia.rest.
+In addition to that the application includes a cookies to expirre the login time, using bcrypt for password hashing fuction and using two different navbar-page to control the visibility of the navbar items depends on the login-status.
 
 # Building Structure
 
@@ -98,4 +96,4 @@ The starter code has been modified as followw:
 - server.js
 
 - GitHub (dev branch): https://github.com/JenBerlin/Employee-Tracker/pull/1
-- Heroku: ...
+- Heroku: https://cryptic-castle-55329.herokuapp.com/
