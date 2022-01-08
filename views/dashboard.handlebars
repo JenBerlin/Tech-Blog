@@ -2,17 +2,20 @@
 
 <article class="message">
   {{#each postMap}}
-    <div class="message-header">
-      <p>{{title}} 
-        on
-        {{formatDate createdAt}}</p>
-    </div>
-    <div class="message-body">
-      <p> {{content}}</p>
-    </div>
-    <div>
-      <button type="submit" id={{id}} name="delete-post" class="delete" aria-label="delete">Delete</button>
-      <button type="submit" id={{id}} name="update-post" class="update" aria-label="update">Update</button>
+    <div class="card border border-dark p-2 m-2">
+    <div class="card-header bg-dark text-light">
+      <div class="message-header">
+        <p>{{title}} 
+          on
+          {{formatDate createdAt}}</p>
+      </div>
+      <div class="message-body">
+        <p> {{content}}</p>
+      </div>
+      <div>
+        <button type="submit" id={{id}} name="delete-post" class="delete" aria-label="delete">Delete</button>
+        <button type="submit" id={{id}} name="update-post" class="update" aria-label="update">Update</button>
+      </div>
     </div>
   {{/each}}
   <div>
@@ -22,5 +25,6 @@
         class="btn btn-dark"
       >+ New Post</button></a>
   </div>
+  
 </article>
 <script src="./js/delete-post.js"></script>

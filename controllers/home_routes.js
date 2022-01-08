@@ -69,6 +69,7 @@ router.get("/newpost", (req, res) => {
   res.render("newpost");
 });
 
+// Render comment-post.handlebars
 router.get("/comment-post/:id", async (req, res) => {
   try {
     const post = await Post.findByPk(
@@ -79,6 +80,24 @@ router.get("/comment-post/:id", async (req, res) => {
     req.session.postId = req.params.id;
     // In {} übergeben wir die variable
     res.render("comment-post", { post: post.get({ plain: true }) });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+// Render show-post-comment.handlebars
+router.get("/show-post-comment/:id", async (req, res) => {
+  try {
+    // Warum "id"? Da oben /:id steht
+    const postWithComment = await Post.findByPk(req.params.id, {
+      include: [{ model: Comment }],
+    });
+    console.log(postWithComment);
+    req.session.postId = req.params.id;
+    // In {} übergeben wir die variable
+    res.render("show-post-comment", {
+      post: postWithComment.get({ plain: true }),
+    });
   } catch (err) {
     res.status(500).json(err);
   }

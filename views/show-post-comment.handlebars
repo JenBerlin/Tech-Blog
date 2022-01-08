@@ -9,14 +9,9 @@
     </div>
     <div class="message-body">
       <p> {{post.content}}</p>
-    </div>
-    <div>
-        <input type="text" id="input-comment" name="comment">
-    </div>
-    <div>
-      <button type="submit" name="submit" class="submit" aria-label="submit">Submit</button>
+      {{#each post.comments}}
+        <p> {{comment}}</p>
+      {{/each}}
     </div>
 </article>
 </form>
-
-{{!-- ohne Button, ohne input, p --}}

@@ -8,12 +8,12 @@
   {{!-- #each = ist wie ein tag --}}
   {{!-- postMap wurde in home_routes bestimmt --}}
   {{#each postMap}}
-    <div class="card border border-dark p-2 m-2">
-      <div class="card-header">
+    <div class="card border border-dark p-2 m-2 d-line">
+      <div class="card-header bg-dark text-light">
         {{#if ../loggedIn}}
           <a href="/comment-post/{{id}}" id="comment-post">{{title}}</a>
         {{else}}
-          {{title}}
+          <h4>{{title}}</h4>
         {{/if}}
         by
         {{user.username}} 

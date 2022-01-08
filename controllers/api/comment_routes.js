@@ -10,7 +10,7 @@ router.post("/", async (req, res) => {
     await Comment.create({
       comment: postData.comment,
       user_id: req.session.userId,
-      post_id: req.session.postId,
+      post_id: postData.postId,
     });
     // Es wird immer auf ein res gewartet (req, RES); Status 200 wäre dann hier die RES.
     // Man muss dem status noch ein Ende mitgeben.
