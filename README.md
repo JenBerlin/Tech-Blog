@@ -131,5 +131,5 @@ No test has been impletmented.
 └── singup.handlebars
 ```
 
-- GitHub (dev branch): https://github.com/JenBerlin/Employee-Tracker/pull/1
+- GitHub (dev branch): https://github.com/JenBerlin/Tech-Blog/pull/1
 - Heroku: https://cryptic-castle-55329.herokuapp.com/
