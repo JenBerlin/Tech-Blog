@@ -7,7 +7,7 @@ Table of content
 - [Installation](#installation)
 - [Building Structure](#building-structure)
 - [Usage and Screenshots](#usage-and-screenshots)
-- [Tech/Framwork used](#techframwork-used)
+- [Tech/Framework used](#techframework-used)
 - [Tests](#tests)
 - [Repositery content + link](#repositery-content--link)
 
@@ -42,7 +42,7 @@ Usage ...
 
 ![Getting Started](./image/ScreenShot_1.png)
 
-# Tech/Framwork used
+# Tech/Framework used
 
 - Node.js
 - npm packages: require, bcrypt, connect-session-sequelize dotenv, express, express-handlebars, express-session, moment, sequelize
@@ -57,6 +57,7 @@ No test has been impletmented.
 
 # Repositery content + link
 
+```bash
 ├── README.md
 ├── backup-whateverfolder-2022-01-09.txt
 ├── config
@@ -111,6 +112,7 @@ No test has been impletmented.
 │   └── public-navbar.handlebars
 ├── show-post-comment.handlebars
 └── singup.handlebars
+```
 
 - GitHub (dev branch): https://github.com/JenBerlin/Employee-Tracker/pull/1
 - Heroku: https://cryptic-castle-55329.herokuapp.com/
