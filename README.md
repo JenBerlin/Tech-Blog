@@ -20,15 +20,35 @@ In addition to that the application includes a cookies to expiere the login time
 
 # Installation
 
-The User navigates to the deployed URL and by clicking on "Login" anyone can create an personal account to be able to post own posts (including deleting them), viewing all posts with comments and contributing own comments to already existing posts.
+The User navigates to the deployed URL and by clicking on "Login" the user gets guided to "Sing up" where anyone can create an personal account to be able to post own posts (including deleting them), viewing all posts with comments and contributing own comments to already existing posts.
 
-Login Screenshot: ...
+![Getting Started](./image/ScreenShot_5.png)
+
+![Getting Started](./image/ScreenShot_1.png)
+
+![Getting Started](./image/ScreenShot_2.png)
 
 # Usage and Screenshots
 
-Usage ...
+By clicking on "Login" a user who have already an account can be taken to their personal dashboard.
 
 ![Getting Started](./image/ScreenShot_1.png)
+
+![Getting Started](./image/ScreenShot_3.png)
+
+On the dashboard the user is able to delete own posts or to create new post.
+
+![Getting Started](./image/ScreenShot_4.png)
+
+A active user (login) can navigate to "Home" to be able to comment on already excisting post from other blog users.
+
+![Getting Started](./image/ScreenShot_6.png)
+
+By click on a post headline the user gets guided to the page on which the comment can be created.
+
+![Getting Started](./image/ScreenShot_7.png)
+
+![Getting Started](./image/ScreenShot_8.png)
 
 # Tech/Framework used
 
