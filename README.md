@@ -57,61 +57,60 @@ No test has been impletmented.
 
 # Repositery content + link
 
-- config
-  - connection.js
-- controllers
-  - api
-    - comment_routes.js
-    - index.js
-    - post_routes.js
-    - user_routes.js
-  - home_routes.js
-  - index.js
-- db
-  - schema.sql
-- helpers
-  - index.js
-- image
-  - 1-Screenshot.png
-- models
-  - Comment.js
-  - index.js
-  - Post.js
-  - User.js
-- node_modules
-  - ...
-- public
-  - css
-  - js
-    - comment.js
-    - delete-post.js
-    - login.js
-    - post.js
-    - singup.js
-- seeds
-  - comment-seeds.js
-  - index.js
-  - post-seeds.js
-  - user-seeds.js
-- views
-  - layouts
-    - main.handlebars
-  - partials
-    - private-navbar.handlebars
-    - public-navbar.handlebars
-  - comment-post.handlebars
-  - dashboard.handlebars
-  - home.handlebars
-  - login.handlebars
-  - newpost.handlebars
-  - show-post-comment.handlebars
-  - singup.handlebars
-- .env
-- .gitignore
-- package-lock.json
-- package.json
-- README.md
-- server.js
+├── README.md
+├── backup-whateverfolder-2022-01-09.txt
+├── config
+│   └── connection.js
+├── controllers
+│   ├── api
+│   │   ├── comment_routes.js
+│   │   ├── index.js
+│   │   ├── post_routes.js
+│   │   └── user_routes.js
+│   ├── home_routes.js
+│   └── index.js
+├── db
+│   └── schema.sql
+├── helpers
+│   └── index.js
+├── image
+├── models
+│   ├── Comment.js
+│   ├── Post.js
+│   ├── User.js
+│   └── index.js
+├── node_modules
+│   ├── ...
+│   │   └── ...
+├── package-lock.json
+├── package.json
+├── public
+│   ├── css
+│   └── js
+│   ├── comment.js
+│   ├── delete-post.js
+│   ├── login.js
+│   ├── post.js
+│   └── singup.js
+├── seeds
+│   ├── comment-seeds.js
+│   ├── index.js
+│   ├── post-seeds.js
+│   └── user-seeds.js
+├── server.js
+└── views
+├── comment-post.handlebars
+├── dashboard.handlebars
+├── home.handlebars
+├── layouts
+│   └── main.handlebars
+├── login.handlebars
+├── newpost.handlebars
+├── partials
+│   ├── private-navbar.handlebars
+│   └── public-navbar.handlebars
+├── show-post-comment.handlebars
+└── singup.handlebars
 
 - GitHub (dev branch): https://github.com/JenBerlin/Employee-Tracker/pull/1
 - Heroku: https://cryptic-castle-55329.herokuapp.com/
