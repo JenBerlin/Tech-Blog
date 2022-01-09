@@ -14,7 +14,7 @@ Table of content
 
 This CMS style (Content Management System) Blog application allows the user to singup and login to their account, publish and delete own blog posts and comment on other users blog posts.
 
-It is build using HTML, CSS, Bottstrap V5, jQuery, Handlebars.js, Express.js, Node.js, Sequelize, MySQL2 and Express-Sessions.
+It is build using HTML, CSS, Bottstrap v5.1.3, jQuery, Handlebars.js, Express.js, Node.js, Sequelize, MySQL2 and Express-Sessions.
 
 In addition to that the application includes a cookies to expiere the login time, using bcrypt for password hashing fuction and using two different navbar-page to control the visibility of the navbar items depends on the login-status.
 
@@ -37,7 +37,7 @@ Usage ...
 - JavaScript
 - mySQL2
 - jQuery
-- Bootsstrap v5
+- Bootsstrap v5.1.3
 
 # Tests
 

@@ -1,17 +1,36 @@
 {{> private-navbar}}
 
-<form class="create-form">
-<article class="message">
-    <div class="message-header">
-      <p>{{post.title}} 
-        on
-        {{formatDate post.createdAt}}</p>
-    </div>
-    <div class="message-body">
-      <p> {{post.content}}</p>
-      {{#each post.comments}}
-        <p> {{comment}}</p>
-      {{/each}}
-    </div>
-</article>
-</form>
+<div class="container my-5">
+  <form class="create-form">
+    <article class="message">
+
+      <div class="card border border-info m-1">
+          <div class="card-header bg-light text-info">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10">
+                  <h4 class="mt-2">{{post.title}}</h4>
+                </div>
+                <div>
+                  <p class="text-secondary">
+                    on
+                    {{formatDate post.createdAt}}</p>
+                </div>
+              </div>  
+            </div>
+          </div>
+        
+          <div class="container">
+            <div class="card-body px-4">
+              <blockquote class="blockquote">
+                <p class="mt-3">{{post.content}}</p>
+                {{#each post.comments}}
+                  <p class="bg-info p-2 bg-opacity-10">{{comment}}</p>
+                {{/each}}
+              </blockquote>
+            </div>
+          </div>
+
+  </article>
+  </form>
+</div>
