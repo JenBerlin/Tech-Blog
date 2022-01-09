@@ -5,7 +5,7 @@ Table of content
 - [14 Model-View-Controller (MVC): Tech Blog](#14-model-view-controller-mvc-tech-blog)
 - [Description](#description)
 - [Installation](#installation)
-- [Usage and Screenshots](#usage-and-screenshots)
+- [Usage](#usage)
 - [Tech/Framework used](#techframework-used)
 - [Tests](#tests)
 - [Repositery content/Building structure + deployed links](#repositery-contentbuilding-structure--deployed-links)
@@ -22,32 +22,41 @@ In addition to that the application includes a cookies to expiere the login time
 
 The User navigates to the deployed URL and by clicking on "Login" the user gets guided to "Sing up" where anyone can create an personal account to be able to post own posts (including deleting them), viewing all posts with comments and contributing own comments to already existing posts.
 
+Home
 ![Getting Started](./image/ScreenShot_5.png)
 
+Login
 ![Getting Started](./image/ScreenShot_1.png)
 
+Sing up
 ![Getting Started](./image/ScreenShot_2.png)
 
-# Usage and Screenshots
+# Usage
 
 By clicking on "Login" a user who have already an account can be taken to their personal dashboard.
 
+Login
 ![Getting Started](./image/ScreenShot_1.png)
 
+Dashboard
 ![Getting Started](./image/ScreenShot_3.png)
 
 On the dashboard the user is able to delete own posts or to create new post.
 
+New Post
 ![Getting Started](./image/ScreenShot_4.png)
 
 A active user (login) can navigate to "Home" to be able to comment on already excisting post from other blog users.
 
+Home (logged in)
 ![Getting Started](./image/ScreenShot_6.png)
 
 By click on a post headline the user gets guided to the page on which the comment can be created.
 
+Leave comment
 ![Getting Started](./image/ScreenShot_7.png)
 
+Added comment
 ![Getting Started](./image/ScreenShot_8.png)
 
 # Tech/Framework used
