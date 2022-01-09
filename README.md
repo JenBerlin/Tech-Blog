@@ -4,16 +4,26 @@ Table of content
 
 - [14 Model-View-Controller (MVC): Tech Blog](#14-model-view-controller-mvc-tech-blog)
 - [Description](#description)
+- [Installation](#installation)
 - [Building Structure](#building-structure)
-- [Screenshots](#screenshots)
+- [Usage and Screenshots](#usage-and-screenshots)
 - [Tech/Framwork used](#techframwork-used)
+- [Tests](#tests)
 - [Repositery content + link](#repositery-content--link)
 
 # Description
 
-This Blog application allows the user to singup and login to their account, publish and delete own blog posts and comment on other users blog posts.
+This CMS style (Content Management System) Blog application allows the user to singup and login to their account, publish and delete own blog posts and comment on other users blog posts.
 
-In addition to that the application includes a cookies to expirre the login time, using bcrypt for password hashing fuction and using two different navbar-page to control the visibility of the navbar items depends on the login-status.
+It is build using HTML, CSS, Bottstrap V5, jQuery, Handlebars.js, Express.js, Node.js, Sequelize, MySQL2 and Express-Sessions.
+
+In addition to that the application includes a cookies to expiere the login time, using bcrypt for password hashing fuction and using two different navbar-page to control the visibility of the navbar items depends on the login-status.
+
+# Installation
+
+The User navigates to the deployed URL and by clicking on "Login" anyone can create an personal account to be able to post own posts (including deleting them), viewing all posts with comments and contributing own comments to already existing posts.
+
+Login Screenshot: ...
 
 # Building Structure
 
@@ -26,7 +36,9 @@ The starter code has been modified as followw:
 - The connection file establishes the database connection by using "sequelize" in node.js, the .env as well as by naming the host (localhost) and dialect (MySQL)
 - The API routes are setting up the relation between the tabels and the requests (get, post, put and delete) by using express.js
 
-# Screenshots
+# Usage and Screenshots
+
+Usage ...
 
 ![Getting Started](./image/ScreenShot_1.png)
 
@@ -36,6 +48,12 @@ The starter code has been modified as followw:
 - npm packages: require, bcrypt, connect-session-sequelize dotenv, express, express-handlebars, express-session, moment, sequelize
 - JavaScript
 - mySQL2
+- jQuery
+- Bootsstrap v5
+
+# Tests
+
+No test has been impletmented.
 
 # Repositery content + link
 
