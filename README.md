@@ -5,11 +5,10 @@ Table of content
 - [14 Model-View-Controller (MVC): Tech Blog](#14-model-view-controller-mvc-tech-blog)
 - [Description](#description)
 - [Installation](#installation)
-- [Building Structure](#building-structure)
 - [Usage and Screenshots](#usage-and-screenshots)
 - [Tech/Framework used](#techframework-used)
 - [Tests](#tests)
-- [Repositery content + link](#repositery-content--link)
+- [Repositery content/Building structure + deployed links](#repositery-contentbuilding-structure--deployed-links)
 
 # Description
 
@@ -24,17 +23,6 @@ In addition to that the application includes a cookies to expiere the login time
 The User navigates to the deployed URL and by clicking on "Login" anyone can create an personal account to be able to post own posts (including deleting them), viewing all posts with comments and contributing own comments to already existing posts.
 
 Login Screenshot: ...
-
-# Building Structure
-
-The starter code has been modified as followw:
-
-- Install all dependencies ("dotenv", "express", "mysql2", "sequelize")
-- Setting up the server.js file to get the server running by using "sequelize"
-- Database login gets supported by an .env file
-- Setting up the database by completing the database models as requiered
-- The connection file establishes the database connection by using "sequelize" in node.js, the .env as well as by naming the host (localhost) and dialect (MySQL)
-- The API routes are setting up the relation between the tabels and the requests (get, post, put and delete) by using express.js
 
 # Usage and Screenshots
 
@@ -55,7 +43,7 @@ Usage ...
 
 No test has been impletmented.
 
-# Repositery content + link
+# Repositery content/Building structure + deployed links
 
 ```bash
 ├── README.md

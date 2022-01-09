@@ -8,23 +8,33 @@
   {{!-- #each = ist wie ein tag --}}
   {{!-- postMap wurde in home_routes bestimmt --}}
   {{#each postMap}}
-    <div class="card border border-dark p-2 m-2 d-line">
-      <div class="card-header bg-dark text-light">
-        {{#if ../loggedIn}}
-          <a href="/comment-post/{{id}}" id="comment-post">{{title}}</a>
-        {{else}}
-          <h4>{{title}}</h4>
-        {{/if}}
-        by
-        {{user.username}} 
-        on
-        {{formatDate createdAt}}
-      </div>
-      <div class="card-body">
-        <blockquote class="blockquote mb-0">
-          <p>{{content}}</p>
-        </blockquote>
-      </div>
+  
+    <div class="card border border-info m-1">
+          <div class="card-header bg-light text-info">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10">
+                  {{#if ../loggedIn}}
+                    <a href="/comment-post/{{id}}" id="comment-post">{{title}}</a>
+                      {{else}}
+                        <h4 class="mt-2">{{title}}</h4>
+                      {{/if}}
+                </div>      
+                        <p class="text-secondary">by
+                        {{user.username}} 
+                        on
+                        {{formatDate createdAt}}</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card-body p-0">
+              <blockquote class="blockquote">
+                <p class="mt-3">{{content}}</p>
+              </blockquote>
+            </div>
+          </div>
     </div>
   {{/each}}
 </div>
